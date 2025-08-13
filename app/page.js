@@ -5,6 +5,7 @@ import CarCard from '../components/CarCard';
 import CardPackage from '@/components/CardPackage';
 import CardOur from '@/components/CardOur';
 import CardWork from '@/components/CardWork';
+import CardTestmonial from '@/components/CardTestmonial';
 
 const Home = () => {
   const { cars, packages, logos } = data;
@@ -136,8 +137,10 @@ const Home = () => {
               </p>
             </div>
           </div>
-            <div className='flex-wrap w-full flex items-center justify-center gap-4 mb-10 md:mb-20'>
-             <CardOur />
+            <div className='w-full mb-10 md:mb-20 flex justify-center p-6'>
+              <div className="w-full ">
+                <CardOur />
+              </div>
             </div>
         </section>
 
@@ -185,7 +188,7 @@ const Home = () => {
           </div>
         </section>
 
-        {/* testimonial */}
+        {/* customer say */}
         <section className='p-5 mt-20'>
             <div className='grid grid-cols-1 md:grid-cols-2 mt-2'>
               <div className='p-6'>
@@ -208,6 +211,66 @@ const Home = () => {
             </div>
         </section>
 
+      {/* charging */}
+    <section className="mt-20 w-screen">
+      <div className='grid grid-cols-1 md:grid-cols-3'>
+        <div
+          className='col-span-2 relative h-96 flex items-end p-5'
+          style={{
+            backgroundImage: 'url("https://images.unsplash.com/photo-1745392842741-10dd83fa4dca?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center', 
+          }}
+        >
+          <h1 className='text-2xl font-bold mb-8 ml-5 md:ml-10 bg-white bg-opacity-80 p-4 rounded-lg '>
+            CHARGE INTO THE FUTURE: <span className='text-[#896400]'>EXPLORE </span> THE EV CHARGING CAR AND VANS PLANS
+          </h1>
+        </div>
+        <div className='bg-[#896400] flex flex-col items-center justify-center text-center text-white p-5'>
+          <h1 className='text-white text-xl md:text-3xl font-bold p-5'>
+            EV Charging Plans
+          </h1>
+          <p className='text-white font-semibold p-5'>
+            Our EV charging plans are designed to provide you with the best charging experience for your electric vehicles.
+            Enjoy fast, reliable, and convenient charging solutions tailored to your needs.
+          </p>
+          <button
+            className="bg-white hover:bg-gray-200 cursor-pointer text-[#896400] py-2 px-5 rounded-md m-5">
+            LEARN MORE
+          </button>
+        </div>
+      </div>
+     </section>
+
+     {/* testimonial */}
+     <section className='p-5 mt-20'>
+      <h1 className='rum-title text-center text-xl md:text-3xl font-bold py-5'>
+        What Our Customers Say
+      </h1>
+      <div className=''>
+            <CardTestmonial />
+      </div>
+     </section>
+
+     {/* footer */}
+      {/* <section className='p-5 mt-20 bg-black'>
+          <h1 className='rum-title text-center text-xl md:text-3xl font-bold py-5 text-white'>
+            More Cars
+          </h1>
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
+            {cars.map((car) => (
+              <CarCard
+                key={car.id}
+                img={car.img}
+                name={car.name}
+                description={car.description}
+              />
+            ))}
+          </div>
+        </section> */}
+        <section className='p-5 mt-20 '>
+          
+        </section>
     </>
   );
 };

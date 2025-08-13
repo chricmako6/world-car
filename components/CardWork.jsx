@@ -12,7 +12,7 @@ function CardWork() {
     "col-start-3 row-start-1 p-4 hidden md:block shadow-xl rounded-md hover:-rotate-3 transition-transform duration-300 cursor-pointer",
     "col-start-3 row-start-2 p-4 hidden md:block shadow-xl rounded-md hover:-rotate-3 transition-transform duration-300 cursor-pointer"
   ];
-  
+
   const iconMap = {
     0: Briefcase,
     1: Code,

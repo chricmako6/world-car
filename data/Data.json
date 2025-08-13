@@ -84,42 +84,42 @@
   "testimonial": [
     {
     "id": "1",
-    "rate": "",
-    "description": "I highly recommend this company. Easy to use and straight forward. Most important for me they have really great staff I was dealing with Chriss and Ethan and they have been absolutely professional, helpful and very friendly. I admit that I have bombarded them with so many enquiries but they were so very friendly.",
+    "user": "https://images.unsplash.com/photo-1547619292-870fe4aeadb8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHByb2ZpbGUlMjBwaWN0dXJlJTIwYmxhY2t8ZW58MHx8MHx8fDA%3D",
+    "description": "I highly recommend this company. Easy to use and straight forward. Most important for me they have really great staff I was dealing with Chriss and Ethan and they have been absolutely professional, helpful and very friendly.",
     "username": "ETHAN MACSITTA",
     "time": "2 week ago"
   },
   {
     "id": "2",
-    "rate": "",
+    "user": "https://images.unsplash.com/photo-1616797147704-7df2e256d397?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2ZpbGUlMjBwaWN0dXJlJTIwYmxhY2t8ZW58MHx8MHx8fDA%3D",
     "description": "Fantastic experience from start to finish. The platform was intuitive and the customer support team answered all my questions quickly. Big thanks to Sarah and Tom for going above and beyond.",
     "username": "JULIA BENNETT",
     "time": "1 week ago"
   },
   {
     "id": "3",
-    "rate": "",
+    "user": "https://plus.unsplash.com/premium_photo-1666264200737-acad542a92ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZSUyMHBpY3R1cmUlMjBibGFja3xlbnwwfHwwfHx8MA%3D%3D",
     "description": "I don’t usually write reviews but I had to this time. Their team was extremely patient and professional, even when I had a million questions. Service was smooth and very human.",
     "username": "MARCUS KELLER",
     "time": "3 days ago"
   },
   {
     "id": "4",
-    "rate": "",
+    "user": "https://images.unsplash.com/photo-1602471615287-d733c59b79c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fHww",
     "description": "Everything was handled professionally and with a smile. I especially appreciated how transparent the process was. Huge shoutout to Lily for making it so easy for me.",
     "username": "CARLA DUNMORE",
     "time": "5 days ago"
   },
   {
     "id": "5",
-    "rate": "",
+    "user": "https://images.unsplash.com/photo-1690687505782-b7cc62530e0e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8fDA%3D",
     "description": "Exceptional service! From the first contact to the end, the staff were courteous and efficient. Alex walked me through everything and made sure I felt confident the whole time.",
     "username": "STEVEN LANE",
     "time": "4 week ago"
   },
   {
     "id": "6",
-    "rate": "",
+    "user": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fHww",
     "description": "A very pleasant experience! Their team responded quickly, and every step was clearly explained. I had the pleasure of speaking with Jenna, who was super kind and professional.",
     "username": "KAYLA MORGAN",
     "time": "6 days ago"
