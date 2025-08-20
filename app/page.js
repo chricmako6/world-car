@@ -6,6 +6,7 @@ import CardPackage from '@/components/CardPackage';
 import CardOur from '@/components/CardOur';
 import CardWork from '@/components/CardWork';
 import CardTestmonial from '@/components/CardTestmonial';
+import CardFooter from '@/components/CardFooter';
 
 const Home = () => {
   const { cars, packages, logos } = data;
@@ -269,7 +270,12 @@ const Home = () => {
           </div>
         </section> */}
         <section className='p-5 mt-20 '>
-          
+          <div>
+            <CardFooter />
+          </div>
+          <div>
+           
+          </div>
         </section>
     </>
   );

@@ -6,8 +6,7 @@ import { Briefcase, Code, PenTool, Layers } from 'lucide-react';
 
 function CardWork() {
   const gridPositions = [
-    "bg-white p-4 shadow-xl hidden md:block rounded-md hover:rotate-3 transition-transform duration-300 cursor-pointer",              
-    "row-span-2 p-4 bg-[#896400] hidden md:block shadow-xl rounded-md hover:rotate-3 transition-transform duration-300 cursor-pointer", 
+    "bg-white p-4 shadow-xl hidden md:block rounded-md hover:rotate-3 transition-transform duration-300 cursor-pointer", 
     "col-start-1 row-start-2 p-4 hidden md:block shadow-xl rounded-md hover:rotate-3 transition-transform duration-300 cursor-pointer",
     "col-start-3 row-start-1 p-4 hidden md:block shadow-xl rounded-md hover:-rotate-3 transition-transform duration-300 cursor-pointer",
     "col-start-3 row-start-2 p-4 hidden md:block shadow-xl rounded-md hover:-rotate-3 transition-transform duration-300 cursor-pointer"
