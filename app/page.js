@@ -7,6 +7,7 @@ import CardOur from '@/components/CardOur';
 import CardWork from '@/components/CardWork';
 import CardTestmonial from '@/components/CardTestmonial';
 import CardFooter from '@/components/CardFooter';
+import CardFoot from '@/components/CardFoot';
 
 const Home = () => {
   const { cars, packages, logos } = data;
@@ -254,27 +255,12 @@ const Home = () => {
      </section>
 
      {/* footer */}
-      {/* <section className='p-5 mt-20 bg-black'>
-          <h1 className='rum-title text-center text-xl md:text-3xl font-bold py-5 text-white'>
-            More Cars
-          </h1>
-          <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
-            {cars.map((car) => (
-              <CarCard
-                key={car.id}
-                img={car.img}
-                name={car.name}
-                description={car.description}
-              />
-            ))}
-          </div>
-        </section> */}
         <section className='p-5 mt-20 '>
           <div>
             <CardFooter />
           </div>
           <div>
-           
+           <CardFoot />
           </div>
         </section>
     </>
