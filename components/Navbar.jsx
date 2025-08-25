@@ -1,24 +1,38 @@
 'use client';
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { AlignLeft, X } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+  const toggleMenu = () => setIsOpen(!isOpen);
+  const toggleLogin = () => setShowLogin(!showLogin);
 
-  const toggleLogin = () => {
-    setShowLogin(!showLogin);
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
-      <nav className="max-w-full bg-gray-300 flex items-center justify-between px-10 py-5">
+      <nav
+        className={`fixed top-0 w-full z-30 flex items-center justify-between px-10 py-5 transition-all duration-500 ${
+          scrolled
+            ? "backdrop-blur-md bg-white/30 shadow-md"
+            : "bg-gray-300"
+        }`}
+      >
         <div className="rum-title">
           <h1 className="text-xl md:text-3xl font-bold">
             My<span className="text-[#896400]">Car</span>direct
@@ -80,7 +94,7 @@ const Navbar = () => {
       {/* Overlay when menu is open */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-opacity-40 z-40"
+          className="fixed inset-0 bg-black bg-opacity-40 z-40"
           onClick={toggleMenu}
         />
       )}
@@ -92,7 +106,7 @@ const Navbar = () => {
             className="fixed inset-0 bg-black bg-opacity-50 z-50"
             onClick={toggleLogin}
           />
-          <div className="fixed top-1/2 left-1/2 z-50 transform -translate-x-1/2 -translate-y-1/2 duration-1000 bg-white p-8 rounded-md shadow-lg w-[90%] max-w-sm">
+          <div className="fixed top-1/2 left-1/2 z-50 transform -translate-x-1/2 -translate-y-1/2 duration-1000 bg-white p-8 rounded-md shadow-lg shadow-gray-100 w-[90%] max-w-sm">
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-xl font-semibold">Sign In</h2>
               <button onClick={toggleLogin}>

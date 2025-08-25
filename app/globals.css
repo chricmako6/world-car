@@ -128,15 +128,20 @@
   background-size: cover;
   background-position: center;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 
 .rum-title {
   font-family: var(--font-rum-raisin);
-  font-size: 2rem;
+}
+
+/* Glassmorphism */
+.glassmorphism {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(137, 100, 0, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 .gradient-shadow-right{

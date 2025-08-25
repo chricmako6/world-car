@@ -14,6 +14,7 @@ import CardFoot from '@/components/CardFoot';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import CardHero from '@/components/CardHero';
 
 const Home = () => {
   const { cars, packages, logos } = data;
@@ -52,7 +53,9 @@ const Home = () => {
     <>
       {/* Hero section */}
       <section className="">
-        <div className="h-[500px] hero-image"></div>
+        <div className="h-[590px] hero-image">
+          <CardHero />
+        </div>
       </section>
 
       {/* Car Carousel Section */}
