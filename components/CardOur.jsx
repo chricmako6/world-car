@@ -1,6 +1,7 @@
 import React from 'react';
 import { Armchair, Fuel, Fence, Star } from 'lucide-react';
 import Slider from "react-slick";
+import { motion } from "framer-motion";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -87,8 +88,15 @@ function CardOur() {
     return (
         <div className="slider-container mx-auto px-2 md:px-8 py-4 items-center justify-center">
             <Slider {...settings}>
-                {cardData.map((card, index) => (
-                    <div key={index} className='border-2 border-[#896400] rounded-md gap-3 bg-[#181818] max-w-sm'>
+                {cardData.map((card, idx) => (
+                    <motion.div
+                        key={idx}
+                        className='border-2 border-[#896400] rounded-md gap-3 bg-[#181818] max-w-sm'
+                        initial={{ opacity: 0, y: 60 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						transition={{ duration: 0.8, type: "spring", delay: idx * 0.2 }}
+                        viewport={{ once: false, amount: 0.7 }}
+                    >
                         {/* Card Image */}
                         <div
                             className='h-[200px] md:h-[240px] w-full rounded-md bg-cover bg-center'
@@ -136,7 +144,7 @@ function CardOur() {
                                 Book Now
                             </button>
                         </div>
-                    </div>
+                    </motion.div>
                 ))}
             </Slider>
         </div>

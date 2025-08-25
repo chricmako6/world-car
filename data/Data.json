@@ -128,18 +128,28 @@
   "logos": [
     {
       "id": "1",
+      "img": "https://www.citypng.com/public/uploads/preview/hd-bmw-black-logo-transparent-background-735811696610462hg2ffqtvce.png?v=2025062002",
+      "alt": "bmw"
+    },
+    {
+      "id": "2",
       "img": "https://www.logo.wine/a/logo/Tesla%2C_Inc./Tesla%2C_Inc.-Wordmark-Black-Logo.wine.svg",
       "alt": "tesla"
     },
     {
-      "id": "4",
+      "id": "3",
       "img": "https://www.svgrepo.com/show/446869/ford.svg",
       "alt": "ford"
     },
     {
-      "id": "5",
+      "id": "4",
       "img": "https://www.svgrepo.com/show/446878/hyundai.svg",
       "alt": "hyundai"
+    },
+    {
+      "id": "5",
+      "img": "https://freepnglogo.com/images/all_img/1731433480_toyota-logo-black.png",
+      "alt": "toyota"
     }
   ],
   "work": [
@@ -158,10 +168,6 @@
     {
       "title": "All-Inclusive Packages",
       "desc": "Insurance, maintenance, and servicing are all included, so you only focus on driving."
-    },
-    {
-      "title": "No Long-Term Commitment",
-      "desc": "Unlike traditional leases, you're not locked in. Pause or cancel your subscription when needed."
     }
   ]
 }
