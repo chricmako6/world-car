@@ -75,7 +75,7 @@ const Navbar = () => {
           </button>
         </div>
         <div className="flex flex-col gap-4 p-5">
-          <Link href=''>About</Link>
+           <Link href="">About</Link>
           <Link href=''>Cars</Link>
           <Link href=''>Vans</Link>
           <Link href=''>How it works</Link>

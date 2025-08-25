@@ -94,7 +94,7 @@ const Home = () => {
       </section>
 
       {/* another section */}
-      <section className='p-5 mt-20 bg-black h-[390px] grid md:grid-cols-2 grid-cols-1'>
+      <section className='p-5 mt-20 bg-black h-[390px] grid md:grid-cols-2 grid-cols-1'  id="about">
         <div className="p-5">
            <motion.h1
             className="rum-title text-xl md:text-3xl font-bold w-[400px] py-5 text-white"
@@ -143,9 +143,17 @@ const Home = () => {
           </motion.button>
         </div>
 
-        <div className="inset-shadow-black bg-[#896400] hidden md:block rounded-r-lg rounded-tr-[5rem] gradient-shadow-right">
-          <h1>The Best Cars</h1>
-          <p>Bmw</p>
+        <div className="inset-shadow-black bg-[#896400] hidden md:block rounded-r-lg rounded-tr-[5rem] gradient-shadow-right overflow-hidden">
+          <motion.img
+            src="https://car-rental-temp2.vercel.app/car-hero.webp"
+            alt="Decorative"
+            className="w-full h-full object-cover shadow-[0_8px_20px_rgba(0,0,0,0.4)]"
+            initial={{ opacity: 0, x: 60 }}           
+            whileInView={{ opacity: 1, x: 0 }}        
+            exit={{ opacity: 0, x: 60 }}               
+            transition={{ duration: 0.8, type: "spring", delay: 0.2 }}
+            viewport={{ once: false, amount: 0.7 }}
+          />
         </div>
       </section>
 
@@ -158,7 +166,7 @@ const Home = () => {
         exit={{ opacity: 0, y: 60 }}
         transition={{ duration: 0.8, type: "spring" }}
         viewport={{ once: false, amount: 0.7 }} >
-            What Make my Car Direcly Different
+            What Make Our Car Direcly Different
         </motion.h1>
        <div className="grid grid-cols-1 md:grid-cols-3 ">
           {packages.map((pkg, idx) => (
